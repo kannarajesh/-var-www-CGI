@@ -39,9 +39,7 @@ for( $q = 0; $q < $r; $q = $q + 1 )
 $out1= (`ls /MYDATA/INV/$searchd*`)[$q];
 push(@val,"<br> $out1 <br>");
 }
-
 }
-
 $sleep='sleep 20';
 print "Content-type:text/html\r\n\r\n";
 print "<html>";
@@ -53,5 +51,4 @@ print "<h2>Your result in $opt</h2>";
 print "@val";
 print "</body>";
 print "</html>";
-
 1;
